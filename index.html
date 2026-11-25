@@ -18,7 +18,7 @@
   --line:rgba(255,255,255,.07); --line2:rgba(255,255,255,.13);
   --tx:#f0f5f9; --tx2:#9aacbd; --tx3:#7d8d9d;
   --mint:#31e9ac; --mint-d:#0d9b6f; --mint-glow:rgba(49,233,172,.5);
-  --amber:#ffbe4d; --red:#ff6b6b; --blue:#5faaff; --violet:#b195fa;
+  --gold:#f6c453; --amber:#ffbe4d; --red:#ff6b6b; --blue:#5faaff; --violet:#b195fa;
   --r:20px; --nav:78px;
   --sh1:0 1px 2px rgba(0,0,0,.5),0 8px 24px -8px rgba(0,0,0,.7);
   --sh2:0 2px 4px rgba(0,0,0,.4),0 18px 48px -16px rgba(0,0,0,.85);
@@ -79,7 +79,12 @@ header{
 }
 .logo .mark svg{width:19px;height:19px;position:relative;z-index:1}
 .logo b{font-size:14.5px;font-weight:750;letter-spacing:-.015em;display:block;line-height:1.15}
-.logo span{font-size:10px;color:var(--tx3);letter-spacing:.09em;text-transform:uppercase;font-weight:650}
+.logo .sub{font-size:10px;color:var(--tx3);letter-spacing:.09em;text-transform:uppercase;font-weight:650}
+.logo .ace{
+  background:linear-gradient(175deg,#ffeeb0 0%,#f6c453 45%,#d99a2b 100%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:var(--gold);
+}
 .hstat{margin-left:auto;display:flex;align-items:center;gap:6px;flex:0 0 auto}
 .chip{
   display:flex;align-items:center;gap:5px;height:34px;padding:0 11px;border-radius:99px;
@@ -655,7 +660,7 @@ html.big .trow .nm{font-size:15px}
   <div class="hrow">
     <div class="logo">
       <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#04201a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v9a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3V3"/><path d="M9 3v18"/><path d="M17 3c-1.5 1.5-2 3.5-2 6s.5 3 2 3h1V3z"/></svg></div>
-      <div><b>ACE Food Prep</b><span>NYC DOHMH · Form 198E</span></div>
+      <div><b><span class="ace">ACE</span> Food Prep</b><span class="sub">NYC DOHMH · Form 198E</span></div>
     </div>
     <div class="hstat">
       <div class="chip flame" title="Day streak">🔥 <b id="streak">0</b></div>
@@ -2283,6 +2288,5 @@ window.__MANUAL__={"pages":[[{"t":"INTRODUCTION","k":"h","_x0":191.56640625,"_y1
 })();
 
 </script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"f59578dec8924dabb8ba48059b03565b","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
